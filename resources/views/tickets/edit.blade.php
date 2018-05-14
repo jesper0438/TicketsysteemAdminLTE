@@ -8,7 +8,7 @@
 @stop
 
 @section('content')
-{!! Form::model($ticket, ['route' => ['ticket.update', $ticket->id], 'method' => 'put', 'class' => 'form-horizontal']) !!}
+{!! Form::model($tickets, ['route' => ['tickets.edit', $tickets->id], 'method' => 'put', 'class' => 'form-horizontal']) !!}
 <div class="form-group">
 	<div class="form-group">
 		<div class="col-sm-6">

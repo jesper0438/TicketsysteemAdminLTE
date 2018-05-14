@@ -1,12 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Ticket;
 
 class TicketController extends Controller
 {
+    
+ public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index() {
 
         return view('tickets/index', [
@@ -44,8 +50,8 @@ class TicketController extends Controller
 
     public function edit($id)
     {
-        return view('ticket/edit', [
-            'ticket' => Ticket::findOrFail($id),
+        return view('tickets/edit', [
+            'tickets' => Ticket::findOrFail($id),
         ]);
     }
 
