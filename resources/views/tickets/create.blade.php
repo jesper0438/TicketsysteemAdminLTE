@@ -28,6 +28,10 @@
 		{!! Form::label('description', 'Kleur', ['class' => 'control-label']) !!}
 		{!! Form::text('description', null, ['class' => 'form-control', 'placeholder' => 'De kleur van de categorie']) !!}
 	</div>
+  <div class="col-sm-6">
+    {!! Form::label('category', 'Soort', ['class' => 'control-label']) !!}
+    {!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Categorie soort']) !!}
+  </div>
 </div>
 
 <div class="form-group">
@@ -40,8 +44,6 @@
 </div>
 {!! Form::close() !!}
 @endsection
-       
+
 
 @stop
-
-
