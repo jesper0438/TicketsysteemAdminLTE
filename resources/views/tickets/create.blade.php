@@ -29,7 +29,7 @@
 		{!! Form::text('description', null, ['class' => 'form-control', 'placeholder' => 'De kleur van de categorie']) !!}
 	</div>
   <div class="col-sm-6">
-    {!! Form::label('category', 'Soort', ['class' => 'control-label']) !!}
+    {!! Form::label('category', 'Categorie', ['class' => 'control-label']) !!}
     {!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Categorie soort']) !!}
   </div>
 </div>
