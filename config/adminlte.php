@@ -129,8 +129,8 @@ return [
         ],
         [
             'text' => 'Profile',
-            'url'  => 'admin/settings',
-            'icon' => 'user',
+            'url'  => 'users',
+            'icon' => 'users',
         ],
         [
             'text' => 'Change Password',

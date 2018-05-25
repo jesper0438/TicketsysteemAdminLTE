@@ -28,6 +28,22 @@
 		{!! Form::label('description', 'Kleur', ['class' => 'control-label']) !!}
 		{!! Form::text('description', null, ['class' => 'form-control', 'placeholder' => 'De kleur van de categorie']) !!}
 	</div>
+  <div class="col-sm-6">
+		{!! Form::label('category', 'Categorie', ['class' => 'control-label']) !!}
+		{!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Categorie soort']) !!}
+	</div>
+  <div class="col-sm-6">
+    {!! Form::label('user', 'Gebruiker', ['class' => 'control-label']) !!}
+    {!! Form::text('user', null, ['class' => 'form-control', 'placeholder' => 'Gebruiker']) !!}
+  </div>
+  <div class="col-sm-6">
+    {!! Form::label('device', 'Apparaat', ['class' => 'control-label']) !!}
+    {!! Form::text('device', null, ['class' => 'form-control', 'placeholder' => 'Apparaat']) !!}
+  </div>
+  <div class="col-sm-6">
+    {!! Form::label('status', 'Status', ['class' => 'control-label']) !!}
+    {!! Form::text('status', null, ['class' => 'form-control', 'placeholder' => 'Ticket status']) !!}
+  </div>
 </div>
 
 <div class="form-group">
@@ -40,8 +56,6 @@
 </div>
 {!! Form::close() !!}
 @endsection
-       
+
 
 @stop
-
-

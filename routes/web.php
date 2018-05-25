@@ -23,3 +23,6 @@ Route::get('ticket/{id}', 'TicketController@show');
  Route::resources([
         'tickets' => 'TicketController',
     ]);
+Route::resources([
+  'users'=> 'UserController',
+]);
