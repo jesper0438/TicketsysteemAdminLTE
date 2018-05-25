@@ -26,9 +26,12 @@
                 <th class="col-sm-3">Name</th>
                 <th class="col-sm-3">Description</th>
                 <th class="col-sm-3">Category </th>
+<<<<<<< HEAD
                 <th class="col-sm-3">User </th>
                 <th class="col-sm-3">Device </th>
                 <th class="col-sm-3">Status </th>
+=======
+>>>>>>> b7e4a1c762c23d7a7b7ec1675f53264f586f0d25
             </thead>
                 <tbody>
                 @foreach ($tickets as $row)
@@ -36,9 +39,12 @@
                     <td class="table-text">{{ $row->name }}</td>
                     <td class="table-text">{{ $row->description }}</td>
                     <td class="table-text">{{ $row->category }}</td>
+<<<<<<< HEAD
                     <td class="table-text">{{ $row->user }}</td>
                     <td class="table-text">{{ $row->device }}</td>
                     <td class="table-text">{{ $row->status }}</td>
+=======
+>>>>>>> b7e4a1c762c23d7a7b7ec1675f53264f586f0d25
                     <td>
          <a class="btn btn-primary" href="{{action('TicketController@edit', $row->id)}}"><i class="fa fa-bt fa-pencil" aria-hidden="true"></i> Bewerken</a></td>
 

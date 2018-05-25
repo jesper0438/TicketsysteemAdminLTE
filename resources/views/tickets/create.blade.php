@@ -29,6 +29,7 @@
 		{!! Form::text('description', null, ['class' => 'form-control', 'placeholder' => 'De kleur van de categorie']) !!}
 	</div>
   <div class="col-sm-6">
+<<<<<<< HEAD
 		{!! Form::label('category', 'Categorie', ['class' => 'control-label']) !!}
 		{!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Categorie soort']) !!}
 	</div>
@@ -43,6 +44,10 @@
   <div class="col-sm-6">
     {!! Form::label('status', 'Status', ['class' => 'control-label']) !!}
     {!! Form::text('status', null, ['class' => 'form-control', 'placeholder' => 'Ticket status']) !!}
+=======
+    {!! Form::label('category', 'Categorie', ['class' => 'control-label']) !!}
+    {!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Categorie soort']) !!}
+>>>>>>> b7e4a1c762c23d7a7b7ec1675f53264f586f0d25
   </div>
 </div>
 
