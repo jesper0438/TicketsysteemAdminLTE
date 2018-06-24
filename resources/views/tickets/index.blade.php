@@ -17,6 +17,7 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Overzicht</h3>
                     <a href="{!! url('tickets/create') !!}" class="btn btn-success pull-right">Nieuwe ticket</a>
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
 
                 </div>
 

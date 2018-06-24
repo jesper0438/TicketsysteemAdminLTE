@@ -138,15 +138,15 @@ return [
             'icon' => 'lock',
         ],
         [
-            'text'    => 'Multilevel',
+            'text'    => 'Administration',
             'icon'    => 'share',
             'submenu' => [
                 [
-                    'text' => 'Level One',
+                    'text' => 'Categories',
                     'url'  => 'tickets',
                 ],
                 [
-                    'text'    => 'Level One',
+                    'text'    => 'Users',
                     'url'     => '#',
                     'submenu' => [
                         [

@@ -16,38 +16,35 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Nieuwe ticket</h3>
                         </div>
-
-                @section('content')
+                      </div>
+</div>
+</div>
+@section('content')
 {!! Form::open(['route' => ['tickets.store'], 'method' => 'post', 'class' => 'form-horizontal']) !!}
 <div class="form-group">
 	<div class="col-sm-6">
-		{!! Form::label('name', 'Naam', ['class' => 'control-label']) !!}
-		{!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'De naam van de ticket']) !!}
+		{!! Form::label('name', 'Name', ['class' => 'control-label']) !!}
+		{!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name']) !!}
 	</div>
 	<div class="col-sm-6">
-		{!! Form::label('description', 'Kleur', ['class' => 'control-label']) !!}
-		{!! Form::text('description', null, ['class' => 'form-control', 'placeholder' => 'De kleur van de categorie']) !!}
+		{!! Form::label('description', 'Description', ['class' => 'control-label']) !!}
+		{!! Form::text('description', null, ['class' => 'form-control', 'placeholder' => 'Description']) !!}
 	</div>
   <div class="col-sm-6">
-<<<<<<< HEAD
-		{!! Form::label('category', 'Categorie', ['class' => 'control-label']) !!}
-		{!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Categorie soort']) !!}
+		{!! Form::label('category', 'Category', ['class' => 'control-label']) !!}
+		{!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Category']) !!}
 	</div>
   <div class="col-sm-6">
-    {!! Form::label('user', 'Gebruiker', ['class' => 'control-label']) !!}
+    {!! Form::label('user', 'user', ['class' => 'control-label']) !!}
     {!! Form::text('user', null, ['class' => 'form-control', 'placeholder' => 'Gebruiker']) !!}
   </div>
   <div class="col-sm-6">
-    {!! Form::label('device', 'Apparaat', ['class' => 'control-label']) !!}
-    {!! Form::text('device', null, ['class' => 'form-control', 'placeholder' => 'Apparaat']) !!}
+    {!! Form::label('device', 'Device', ['class' => 'control-label']) !!}
+    {!! Form::text('device', null, ['class' => 'form-control', 'placeholder' => 'Device']) !!}
   </div>
   <div class="col-sm-6">
     {!! Form::label('status', 'Status', ['class' => 'control-label']) !!}
     {!! Form::text('status', null, ['class' => 'form-control', 'placeholder' => 'Ticket status']) !!}
-=======
-    {!! Form::label('category', 'Categorie', ['class' => 'control-label']) !!}
-    {!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Categorie soort']) !!}
->>>>>>> b7e4a1c762c23d7a7b7ec1675f53264f586f0d25
   </div>
 </div>
 

@@ -35,6 +35,8 @@ class TicketController extends Controller
         $this->validate($request, [
             'name' => 'required|max:255|unique:tickets',
             'description' => 'required|max:255|unique:tickets',
+            'category' => 'required',
+            'user' => 'required',
         
         ]);
         // Create new employee object with the info in the request

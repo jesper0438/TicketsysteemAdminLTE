@@ -5,39 +5,39 @@
 @stop
 
 @section('content')
-<div class="content-wrapper">
-    <div class="container">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <h1>
-          Top Navigation
-          <small>Example 2.0</small>
-        </h1>
-        <ol class="breadcrumb">
-          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-          <li><a href="#">Layout</a></li>
-          <li class="active">Top Navigation</li>
-        </ol>
-      </section>
-<div class="box">
-  <div class="box-header with-border">
-    <h3 class="box-title">Welcome</h3>
-    <div class="box-tools pull-right">
-      <!-- Buttons, labels, and many other things can be placed here! -->
-      <!-- Here is a label for example -->
-      <span class="label label-primary">Label</span>
-    </div>
-    <!-- /.box-tools -->
-  </div>
-  <!-- /.box-header -->
-  <div class="box-body">
-    The body of the box
-  </div>
-  <!-- /.box-body -->
-  <div class="box-footer">
-    The footer of the box
-  </div>
+  
+       <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+                <a href="{{route('tickets.index')}}">
+                    <span class="info-box-icon hover bg-aqua">
+                        <i class="fa fa-fw fa-exclamation"></i>
+                    </span>
+                </a>
+                <div class="info-box-content">
+                    <span class="info-box-text">Tickets</span>
+                    <span class="info-box-number">{{$tickets}} tickets</span>
+                </div>
+            </div>
+        </div>
 
+         <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box">
+                <!--<a href="{{route('users.index')}}">-->
+                    <span class="info-box-icon hover bg-red">
+                        <i class="fa fa-fw fa-user"></i>
+                    </span>
+                </a>
+                <div class="info-box-content">
+                    <span class="info-box-text">Users</span>
+                    <span class="info-box-number"> Users</span>
+                </div>
+            </div>
+        </div>
+
+            
+      
+         
 
 
 @endsection

@@ -11,7 +11,6 @@
 {!! Form::model($tickets, ['route' => ['tickets.edit', $tickets->id], 'method' => 'put', 'class' => 'form-horizontal']) !!}
 <div class="form-group">
 	<div class="form-group">
-<<<<<<< HEAD
     <div class="col-sm-6">
   		{!! Form::label('name', 'Naam', ['class' => 'control-label']) !!}
   		{!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'De naam van de ticket']) !!}
@@ -36,20 +35,6 @@
       {!! Form::label('status', 'Status', ['class' => 'control-label']) !!}
       {!! Form::text('status', null, ['class' => 'form-control', 'placeholder' => 'Ticket status']) !!}
     </div>
-=======
-		<div class="col-sm-6">
-			{!! Form::label('name', 'Naam', ['class' => 'control-label']) !!}
-			{!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'De naam van de categorie']) !!}
-		</div>
-		<div class="col-sm-6">
-			{!! Form::label('description', 'Kleur', ['class' => 'control-label']) !!}
-			{!! Form::text('description', null, ['class' => 'form-control', 'placeholder' => 'De kleur van de categorie']) !!}
-		</div>
-    <div class="col-sm-6">
-			{!! Form::label('category', 'Categorie', ['class' => 'control-label']) !!}
-			{!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Categorie soort']) !!}
-		</div>
->>>>>>> b7e4a1c762c23d7a7b7ec1675f53264f586f0d25
 	</div>
 	<div class="form-group">
 		<div class="col-sm-12">
