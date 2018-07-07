@@ -63,6 +63,39 @@ class TicketController extends Controller
         ]);
     }
 
+     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        // Check if the form was correctly filled in
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'description' => 'required|max:255',
+            'category' => 'required',
+            'user' => 'required',
+            'device' => 'required',
+            'status' => 'required',
+
+        ]);
+        $ticket = Ticket::findorfail($id);
+        $ticket->name = $request ['name'];
+        $ticket->description = $request ['description'];
+        $ticket->category = $request ['category'];
+        $ticket->user = $request ['user'];
+        $ticket->device = $request ['device'];
+        $ticket->description = $request ['description'];
+
+        // Save the changes in the database
+        $ticket->save();
+      
+        return redirect('tickets')->with('success', $ticket->name . ' has been updated.');
+    }
+
     public function show($id) 
     {
        

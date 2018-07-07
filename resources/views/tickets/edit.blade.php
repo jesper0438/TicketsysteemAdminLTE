@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-{!! Form::model($tickets, ['route' => ['tickets.edit', $tickets->id], 'method' => 'put', 'class' => 'form-horizontal']) !!}
+{!! Form::model($tickets, ['route' => ['tickets.update', $tickets->id], 'method' => 'put', 'class' => 'form-horizontal']) !!}
 
 	<div class="form-group">
     <div class="col-sm-6">
@@ -40,7 +40,7 @@
 			<button type="submit" class="btn btn-info">
 				<i class="fa fa-bt fa-floppy-o" aria-hidden="true"></i> Opslaan
 			</button>
-			<a href="/ticket" class="btn btn-warning" role="button"><i class="fa fa-bt fa-ban" aria-hidden="true"></i> Annuleren</a>
+			<a href="/tickets" class="btn btn-warning" role="button"><i class="fa fa-bt fa-ban" aria-hidden="true"></i> Annuleren</a>
 		</div>
 	</div>
 {!! Form::close() !!}
