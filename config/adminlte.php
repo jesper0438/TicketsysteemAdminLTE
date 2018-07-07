@@ -143,7 +143,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Categories',
-                    'url'  => 'tickets',
+                    'url'  => 'categories',
                 ],
                 [
                     'text'    => 'Users',

@@ -4,12 +4,11 @@
 
 @section('content_header')
     <h1>Ticket overzicht</h1>
-
 @stop
 
 @section('content')
 {!! Form::model($tickets, ['route' => ['tickets.edit', $tickets->id], 'method' => 'put', 'class' => 'form-horizontal']) !!}
-<div class="form-group">
+
 	<div class="form-group">
     <div class="col-sm-6">
   		{!! Form::label('name', 'Naam', ['class' => 'control-label']) !!}
@@ -44,7 +43,6 @@
 			<a href="/ticket" class="btn btn-warning" role="button"><i class="fa fa-bt fa-ban" aria-hidden="true"></i> Annuleren</a>
 		</div>
 	</div>
-</div>
 {!! Form::close() !!}
 
 @endsection
