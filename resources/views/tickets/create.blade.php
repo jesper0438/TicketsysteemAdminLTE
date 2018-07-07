@@ -35,7 +35,7 @@
 		{!! Form::text('category', null, ['class' => 'form-control', 'placeholder' => 'Category']) !!}
 	</div>
   <div class="col-sm-6">
-    {!! Form::label('user', 'user', ['class' => 'control-label']) !!}
+    {!! Form::label('user', 'User', ['class' => 'control-label']) !!}
     {!! Form::text('user', null, ['class' => 'form-control', 'placeholder' => 'Gebruiker']) !!}
   </div>
   <div class="col-sm-6">

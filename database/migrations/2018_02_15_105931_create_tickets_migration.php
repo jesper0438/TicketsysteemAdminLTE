@@ -17,6 +17,10 @@ class CreateTicketsMigration extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('description');
+            $table->string('category');
+            $table->string('user');
+            $table->string('device');
+            $table->string('status');
             $table->timestamps();
         });
     }

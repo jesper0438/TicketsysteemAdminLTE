@@ -37,12 +37,18 @@ class TicketController extends Controller
             'description' => 'required|max:255|unique:tickets',
             'category' => 'required',
             'user' => 'required',
+            'device' => 'required',
+            'status' => 'required',
         
         ]);
         // Create new employee object with the info in the request
         $ticket = Ticket::create([
             'name' => $request ['name'],
             'description' => $request ['description'],
+            'category' => $request ['category'],
+            'user' => $request ['user'],
+            'device' => $request ['device'],
+            'status' => $request ['status'],
         ]);
         // Save this object in the database
         $ticket->save();

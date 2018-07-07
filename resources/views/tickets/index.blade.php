@@ -24,7 +24,7 @@
                 <div class="box-body">
                     <table class="table table-striped table-hover">
             <thead>
-                <th class="col-sm-3">Name</th>
+                <th class="col-sm-1">Name</th>
                 <th class="col-sm-3">Description</th>
                 <th class="col-sm-3">Category </th>
 
