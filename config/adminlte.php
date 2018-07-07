@@ -129,8 +129,8 @@ return [
         ],
         [
             'text' => 'Profile',
-            'url'  => 'admin/settings',
-            'icon' => 'user',
+            'url'  => 'users',
+            'icon' => 'users',
         ],
         [
             'text' => 'Change Password',
@@ -138,15 +138,15 @@ return [
             'icon' => 'lock',
         ],
         [
-            'text'    => 'Multilevel',
+            'text'    => 'Administration',
             'icon'    => 'share',
             'submenu' => [
                 [
-                    'text' => 'Level One',
-                    'url'  => 'tickets',
+                    'text' => 'Categories',
+                    'url'  => 'categories',
                 ],
                 [
-                    'text'    => 'Level One',
+                    'text'    => 'Users',
                     'url'     => '#',
                     'submenu' => [
                         [
