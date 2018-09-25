@@ -88,7 +88,7 @@ class TicketController extends Controller
         $ticket->category = $request ['category'];
         $ticket->user = $request ['user'];
         $ticket->device = $request ['device'];
-        $ticket->description = $request ['description'];
+        $ticket->status = $request ['status'];
 
         // Save the changes in the database
         $ticket->save();
