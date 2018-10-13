@@ -20,9 +20,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('ticket/{id}', 'TicketController@show');
 
- Route::resources([
+Route::resources([
         'tickets' => 'TicketController',
     ]);
 Route::resources([
   'users'=> 'UserController',
+]);
+Route::resources([
+'statuses' => 'StatusController',
 ]);
