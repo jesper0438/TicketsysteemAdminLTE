@@ -22,5 +22,22 @@ class StatusController extends Controller
     	return view('statuses/create');
     }
 
+    public function store(Request $request) {
+
+        $this->validate($request, [
+                'name' => 'required|max:255|unique:statuses',
+                'description' => 'required|max:200',
+        ]);
+
+         $status = Status::create([
+            'name' => $request ['name'],
+            'description' => $request ['description'],
+
+        ]);
+        // Save this object in the database
+        $status->save();
+        // Redirect to the employee.index page with a success message.
+        return redirect('statuses');
+    }
 
 }
