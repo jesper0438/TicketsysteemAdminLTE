@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Ticket;
+use App\Status;
 
 class TicketController extends Controller
 {
@@ -16,13 +17,15 @@ class TicketController extends Controller
     public function index() {
 
         return view('tickets/index', [
-            'tickets' => Ticket::orderBy('id', 'asc')->get(),
+            'tickets' => Ticket::orderBy('name', 'asc')->get(),
             ]);
         }
 
      public function create()
     {
-        return view('tickets/create');
+        return view('tickets/create', [
+            'statuses' => Status::orderBy('name','asc')->pluck('name','id')
+        ]);
     }
         /**
      * @param $id
@@ -38,7 +41,7 @@ class TicketController extends Controller
             'category' => 'required',
             'user' => 'required',
             'device' => 'required',
-            'status' => 'required',
+            'status_id' => 'required',
         
         ]);
         // Create new employee object with the info in the request
@@ -48,8 +51,12 @@ class TicketController extends Controller
             'category' => $request ['category'],
             'user' => $request ['user'],
             'device' => $request ['device'],
-            'status' => $request ['status'],
+            'status_id' => $request ['status_id'],
         ]);
+
+        $status = Status::find($request ['status_id']);
+
+        $ticket->status()->associate($status);
         // Save this object in the database
         $ticket->save();
         // Redirect to the employee.index page with a success message.

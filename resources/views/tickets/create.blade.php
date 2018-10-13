@@ -43,8 +43,8 @@
     {!! Form::text('device', null, ['class' => 'form-control', 'placeholder' => 'Device']) !!}
   </div>
   <div class="col-sm-6">
-    {!! Form::label('status', 'Status', ['class' => 'control-label']) !!}
-    {!! Form::text('status', null, ['class' => 'form-control', 'placeholder' => 'Ticket status']) !!}
+    {!! Form::label('status_id', 'Status', ['class' => 'control-label']) !!}
+    {!! Form::select('status_id', $statuses, null, ['class' => 'form-control', 'placeholder' => 'Ticket status']) !!}
   </div>
 </div>
 

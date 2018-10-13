@@ -41,7 +41,7 @@
                     <td class="table-text">{{ $row->category }}</td>
                     <td class="table-text">{{ $row->user }}</td>
                     <td class="table-text">{{ $row->device }}</td>
-                    <td class="table-text">{{ $row->status }}</td>
+                    <td class="table-text">{{ $row->status->name }}</td>
                     <td>
          <a class="btn btn-primary" href="{{action('TicketController@edit', $row->id)}}"><i class="fa fa-bt fa-pencil" aria-hidden="true"></i> Bewerken</a></td>
 

@@ -14,9 +14,12 @@ class StatusController extends Controller
      }
 
     public function index() {
-      return view('statuses/index');
+          return view('statuses/index', [
+            'statuses' => Status::orderBy('id', 'asc')->get(),
+            ]);
+        }
           
-    }
+    
 
     public function create() {
     	return view('statuses/create');
