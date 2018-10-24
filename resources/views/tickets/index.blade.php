@@ -32,6 +32,7 @@
                 <th class="col-sm-3">Device </th>
                 <th class="col-sm-3">Status </th>
 
+
             </thead>
                 <tbody>
                 @foreach ($tickets as $row)
@@ -49,4 +50,6 @@
                 @endforeach
             </tbody>
                  </table>
+
+                 {{ $tickets->links() }}
                 @endsection
