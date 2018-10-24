@@ -118,8 +118,13 @@ return [
             'text'        => 'Pages',
             'url'         => 'admin/pages',
             'icon'        => 'file',
-            'label'       => 4,
+            'label'       => 3,
             'label_color' => 'success',
+        ],
+        [
+            'text' => 'Home',
+            'url'  => 'home',
+            'icon' => 'user',
         ],
         'ACCOUNT SETTINGS',
         [
