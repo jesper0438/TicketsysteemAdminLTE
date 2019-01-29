@@ -43,4 +43,36 @@ class StatusController extends Controller
         return redirect('statuses');
     }
 
+       public function edit($id) {
+
+        return view('statuses/edit' [
+            'statuses' => Status::findOrFail($id),
+        ]);
+    }
+
+     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
+     * @return \Illuminate\Http\Response
+     */
+
+    public function update(Request $request, $id)
+    {
+        // Check if the form was correctly filled in
+        $this->validate($request, [
+            'name' => 'required|max:255',
+            'description' => 'required|max:255',
+        ]);
+        $status = Status::findorfail($id);
+        $status->name = $request ['name'];
+        $status->description = $request ['description'];
+        
+        // Save the changes in the database
+        $status->save();
+      
+        return redirect('statuses')->with('success', $status->name . ' has been updated.');
+    }
+
 }
