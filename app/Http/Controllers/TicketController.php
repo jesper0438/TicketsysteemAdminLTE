@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use Illuminate\Support\Facades\DB;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Ticket;
@@ -16,9 +18,8 @@ class TicketController extends Controller
 
     public function index() {
 
-        return view('tickets/index', [
-            'tickets' => Ticket::orderBy('name', 'asc')->get(),
-            ]);
+      $tickets = Ticket::orderBy('id')->paginate(5);
+      return view('tickets/index')->withTickets($tickets);
         }
 
      public function create()
