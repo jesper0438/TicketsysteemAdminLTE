@@ -122,21 +122,29 @@ return [
             'label_color' => 'success',
         ],
         [
-            'text' => 'Home',
+            'text' => 'Dashboard',
             'url'  => 'home',
             'icon' => 'user',
         ],
-        'ACCOUNT SETTINGS',
+        [
+            'text' => 'Klanten',
+            'url' => 'tickets',
+            'icon' => 'users',
+        ],
         [
             'text' => 'Tickets',
             'url'  => 'tickets',
             'icon' => 'user',
         ],
+        
+        'ACCOUNT SETTINGS',
+       
         [
             'text' => 'Profile',
             'url'  => 'users',
             'icon' => 'users',
         ],
+    
         [
             'text' => 'Change Password',
             'url'  => 'admin/settings',
